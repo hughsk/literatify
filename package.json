@@ -1,0 +1,31 @@
+{
+  "name": "literatify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "literatify": "bin.js"
+  },
+  "scripts": {
+    "test": "cd example && ../bin.js README.md | browserify - -t glslify | indexhtmlify > index.html && serve",
+    "test-transform": "cd example && browserify README.md -t ../transform -t glslify | indexhtmlify > index.html && serve"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.3.2",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "bunny": "^1.0.1",
+    "canvas-fit": "^1.2.0",
+    "canvas-orbit-camera": "^1.0.0",
+    "gl-context": "^0.1.1",
+    "gl-geometry": "^1.0.0",
+    "gl-mat4": "^1.0.0",
+    "glslify": "^1.6.0",
+    "indexhtmlify": "^1.2.0",
+    "normals": "^0.1.0",
+    "serve": "^1.4.0"
+  }
+}
