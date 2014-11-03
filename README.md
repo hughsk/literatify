@@ -19,7 +19,7 @@ CLI tool.
 ### `src = literatify(markdown)`
 
 Takes a markdown string, and returns the extracted source code as a string.
-Code blocks marked with their language as `bash` or `sh`.
+Code blocks marked with their language as `bash` or `sh` are ignored.
 
 ## Browserify Transform
 
